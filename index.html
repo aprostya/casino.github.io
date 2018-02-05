@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Casino</title>
+</head>
+<body>
+<section class="video-container">
+    <h2 class="video-container__title visually-hidden">Video-background</h2>
+    <video autoplay muted loop id="myVideo">
+        <source src="img/video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="overlay">
+        <header class="main-header">
+            <picture>
+                <source media="(min-width: 960px)" srcset="img/LOGO-desktop.png 1x">
+                <img src="img/LOGO.png" alt="main-logo">
+            </picture>
+        </header>
+        <article class="main-content" role="main">
+            <article class="description-content">
+                <h2 class="description-content__text">Беспрецeндентный доселе</h2>
+                <img src="./img/JACKPOT.png" alt="jackpot-logo" width="274" height="73">
+            </article>
+            <div class="items-wrapper">
+                <article class="achievment-items">
+                    <h2 class="achievment-items__title visually-hidden">First-casino-achievment</h2>
+                    <section class="achievment-item">
+                        <span class="achevment-icon achievment-icon--1">First-achievment</span>
+                        <h3 class="achievment-item__heading">Регистрируйся<br class="desktop-space"/> и пополняй депозит
+                        </h3>
+                        <p class="achievment-item__descr">Бонусы за депозит</p>
+                        <ul class="bonus-list">
+                            <li class="bonus-item bonus-item--one"></li>
+                            <li class="bonus-item bonus-item--two"></li>
+                            <li class="bonus-item bonus-item--three"></li>
+                        </ul>
+                    </section>
+                </article>
+                <article class="achievment-items">
+                    <h2 class="achievment-items__title visually-hidden">Second-casino-achievment</h2>
+                    <section class="achievment-item">
+                        <span class="achevment-icon achievment-icon--2">Second-achievment</span>
+                        <h3 class="achievment-item__heading">Играй в любые<br class="desktop-space"/> из 20 игр с
+                            джекпотом</h3>
+                        <a class="achievment-link" href="#">Смотреть игры</a>
+                    </section>
+                </article>
+                <article class="achievment-items">
+                    <h2 class="achievment-items__title visually-hidden">Third-casino-achievment</h2>
+                    <section class="achievment-item">
+                        <span class="achevment-icon achievment-icon--3">Third-achievment</span>
+                        <h3 class="achievment-item__heading">Тащи бабло<br class="desktop-space"/> и джекпот озолотит
+                            тебя!</h3>
+                    </section>
+                </article>
+            </div>
+            <footer class="footer-block">
+                <h2 class="footer-block__header">Сорви джекпот!</h2>
+                <a href="#" class="registration-link"><p>Регистрируйся<br class="mobile-space"/> и забирай весь джекпот!
+                </p></a>
+                <a href="#" class="notice-text">Условия акции</a>
+            </footer>
+            <div class="modal" tabindex="-1">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="closeBtn">&times;</span>
+                        <h2 class="modal-header__title">Регистрация</h2>
+                        <p class="modal-header__descr">Регистрируйся и пополняй депозит</p>
+                    </div>
+                    <form class="modal-body" name="form-popup" action="https://echo.htmlacademy.ru" method="post">
+                        <input class="user-field" type="text" name="username" placeholder="Ваше имя" required>
+                        <input class="user-address" type="email" name="email" placeholder="Адрес эл.почты" required>
+                        <input class="user-login" type="text" name="login" placeholder="Логин" required>
+                        <input class="random-field" type="text" name="field" placeholder="4е поле" required>
+                        <div class="modal-footer">
+                            <button type="submit" class="button-modal registration-link">Регистрация</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>
